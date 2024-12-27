@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".HasilPencarian">
+
+    <ImageView
+        android:id="@+id/arrow_backSearch"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/viewTextSearch"
+        android:layout_width="191dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/font1"
+        android:text="Hasil Pencarian"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toEndOf="@+id/arrow_backSearch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="344dp"
+        android:layout_height="253dp"
+        android:background="@drawable/bg_booking"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTextSearch"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <LinearLayout
+        android:id="@+id/viewPager2"
+        android:layout_width="339dp"
+        android:layout_height="205dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Gambar parkiran">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pictParkir1Lantai1"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/parkir1" />
+
+                <ImageView
+                    android:id="@+id/pictParkir1ALantai1"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/parkir1a" />
+
+                <ImageView
+                    android:id="@+id/pictParkir1bLantai1"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/parkir1b" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultParking1"
+        android:layout_width="107dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="108dp"
+        android:fontFamily="@font/font1"
+        android:text="Parkiran 1"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewTextSearch"
+        app:layout_constraintTop_toBottomOf="@+id/viewTextSearch" />
+
+    <TextView
+        android:id="@+id/floor"
+        android:layout_width="100dp"
+        android:layout_height="16dp"
+        android:fontFamily="@font/font3semibold"
+        android:text="Gedung 1, F1-1"
+        android:textColor="@color/abu"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/resultParking1"
+        app:layout_constraintStart_toStartOf="@+id/resultParking1"
+        app:layout_constraintTop_toBottomOf="@+id/resultParking1"
+        tools:ignore="TextSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

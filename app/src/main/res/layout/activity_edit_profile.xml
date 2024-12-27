@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".EditProfile">
+
+    <ImageView
+        android:id="@+id/arrow_backProfile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/font1"
+        android:text="Edit Profil"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/arrow_backProfile"
+        app:layout_constraintStart_toEndOf="@+id/arrow_backProfile"
+        app:layout_constraintTop_toTopOf="@+id/arrow_backProfile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/nama_edit"
+            android:layout_width="366dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/white"
+            android:ems="20"
+            android:hint="Ubah Nama Lengkap"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:drawablePadding="20dp"
+            android:paddingEnd="20dp"
+            android:drawableStart="@drawable/person"
+            android:drawableTint="@color/black"/>
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="366dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/white"
+            android:ems="20"
+            android:hint="Ubah Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:drawablePadding="20dp"
+            android:paddingEnd="20dp"
+            android:drawableStart="@drawable/email"/>
+
+        <EditText
+            android:id="@+id/pass_edit"
+            android:layout_width="366dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/white"
+            android:ems="20"
+            android:hint="Ubah Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:drawablePadding="20dp"
+            android:paddingEnd="20dp"
+            android:drawableStart="@drawable/password"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="35dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_code_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="true"/>
+
+            <EditText
+                android:id="@+id/phone_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="Nomor Handphone"
+                android:inputType="phone"
+                android:paddingLeft="20dp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="@android:style/Widget.Button"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/btn_masuk"
+            android:fontFamily="@font/font1"
+            android:text="Simpan"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".RiwayatParkir">
+
+    <!-- Panah Kembali -->
+    <ImageView
+        android:id="@+id/arrow_backRiwayat"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Judul "Riwayat Parkir" -->
+    <TextView
+        android:id="@+id/textViewRiwat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/font1"
+        android:text="Riwayat Parkir"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/arrow_backRiwayat"
+        app:layout_constraintStart_toEndOf="@+id/arrow_backRiwayat"
+        app:layout_constraintTop_toTopOf="@+id/arrow_backRiwayat" />
+
+    <!-- CardView (Tempat informasi parkir) -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="68dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRiwat"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Tanggal Parkir -->
+            <TextView
+                android:id="@+id/textViewTanggalRiwayatParkir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font1"
+                android:gravity="center"
+                android:text="27 DESEMBER 2024"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <!-- ID Parkir -->
+            <TextView
+                android:id="@+id/textViewID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/font2m"
+                android:gravity="center"
+                android:text="Plat  : iB 1909 NRK"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <!-- Posisi Parkir -->
+            <TextView
+                android:id="@+id/textViewPosisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/font2m"
+                android:gravity="center"
+                android:text="Posisi : G1-F1-1"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <!-- Waktu Masuk -->
+            <TextView
+                android:id="@+id/textViewRiwayatWaktuParkir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/font2m"
+                android:gravity="center"
+                android:text="Waktu Parkir: 00:01:00"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <!-- Biaya -->
+            <TextView
+                android:id="@+id/textViewRiwayatBiaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/font2m"
+                android:gravity="center"
+                android:text="Biaya : Rp.2000"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

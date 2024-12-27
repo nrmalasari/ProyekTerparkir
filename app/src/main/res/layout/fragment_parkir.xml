@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".ParkirFragment">
+
+    <!-- Panah Kembali -->
+    <ImageView
+        android:id="@+id/arrow_back1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow_back"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="35dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp">
+
+        <!-- Konten dalam CardView -->
+        <LinearLayout
+            android:id="@+id/layout_parkir_waktu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Plat Nomor -->
+            <TextView
+                android:id="@+id/textViewBookingPlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/font1"
+                android:text="Plat Anda: AD7695"
+                android:textSize="15sp"
+                android:textColor="@color/black" />
+
+            <!-- Masuk & Keluar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/textViewBookingIn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/font1"
+                    android:text="Waktu Parkir"
+                    android:textSize="16sp"
+                    android:textColor="@color/abu" />
+
+                <TextView
+                    android:id="@+id/textViewBookingIn2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/font1"
+                    android:textSize="16sp"
+                    android:textColor="@color/abu" />
+            </LinearLayout>
+
+
+            <!-- Garis Pemisah -->
+            <View
+                android:id="@+id/line_separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D3D3D3"
+                android:layout_marginTop="15dp" />
+
+            <!-- Lokasi -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/textViewBookingSpot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/font1"
+                    android:text="Lokasi"
+                    android:textSize="16sp"
+                    android:textColor="@color/abu" />
+
+                <TextView
+                    android:id="@+id/textViewBookingSpot2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/font1"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- Biaya -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/textViewBookingPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/font1"
+                    android:text="Biaya"
+                    android:textSize="16sp"
+                    android:textColor="@color/abu" />
+
+                <TextView
+                    android:id="@+id/textViewBookingPrice2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/font1"
+                    android:text="Rp. 500"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Gambar Mobil -->
+
+    <!-- CardView -->
+    <ImageView
+        android:id="@+id/image_mobil2"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="190dp"
+        android:src="@drawable/mobil2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_waktu_berhenti"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/btn_masuk"
+        android:fontFamily="@font/font1"
+        android:text="Buka Palang Keluar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+
+</FrameLayout>

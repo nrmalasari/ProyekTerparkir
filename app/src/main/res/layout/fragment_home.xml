@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".HomeFragment">
+
+    <!-- TextView untuk menampilkan pesan -->
+    <TextView
+        android:id="@+id/home_text"
+        android:layout_width="259dp"
+        android:layout_height="96dp"
+        android:fontFamily="@font/font2m"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:text="Temukan Tempat Parkir Terbaik"
+        android:textSize="27dp" />
+
+    <!-- ImageView untuk barcode -->
+    <ImageView
+        android:id="@+id/barcode"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:src="@drawable/barcode"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="340dp"/>
+
+    <!-- View sebagai background shadow -->
+    <View
+        android:id="@+id/view_drop_down"
+        android:layout_width="373dp"
+        android:layout_height="178dp"
+        android:background="@drawable/bg_shadow"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="18dp"/>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/drop_downd"/>
+
+    <ImageView
+        android:id="@+id/actionDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_arrow_drop_down"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="230dp"/>
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="280dp"
+        android:width="300dp"
+        android:backgroundTint="@color/background"
+        android:layout_marginLeft="54dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/font2m"
+        android:text="Cari Parkiran"
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/font1"
+        android:text="Rekomendasi Tujuan"
+        android:textColor="@color/black"
+        android:textSize="24dp"/>
+
+    <View
+        android:id="@+id/viewRecomend1"
+        android:layout_width="360dp"
+        android:layout_height="185dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/bg_shadow" />
+
+    <LinearLayout
+        android:id="@+id/viewPager2"
+        android:layout_width="360dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="22dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Gambar parkiran">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/xxi1"
+                    android:layout_width="194dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/xx1a" />
+
+                <ImageView
+                    android:id="@+id/pictParkir1ALantai1"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:src="@drawable/xx1b" />
+
+                <ImageView
+                    android:id="@+id/pictParkir1bLantai1"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/xx1c" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultRekomendasiBioskopXX1"
+        android:layout_width="180dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="475dp"
+        android:layout_marginLeft="39dp"
+        android:fontFamily="@font/font1"
+        android:text="Bioskop XX1"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/rekomendasiHome"
+        android:layout_width="100dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="500dp"
+        android:fontFamily="@font/font3semibold"
+        android:text="Mall Panakukang"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        tools:ignore="TextSizeCheck" />
+
+</FrameLayout>

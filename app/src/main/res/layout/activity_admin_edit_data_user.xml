@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminEditDataUser"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/font1"
+        android:text="Edit Data User"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/editNama"
+            android:layout_width="366dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="20dp"
+            android:drawableTint="@color/black"
+            android:ems="20"
+            android:hint="Ubah Nama Lengkap"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="366dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="20dp"
+            android:ems="20"
+            android:hint="Ubah Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="366dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="20dp"
+            android:ems="20"
+            android:hint="Ubah Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="35dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_code_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="true" />
+
+            <EditText
+                android:id="@+id/editNoHp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="Nomor Handphone"
+                android:inputType="phone"
+                android:paddingLeft="20dp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/btn_masuk"
+            android:fontFamily="@font/font1"
+            android:text="Simpan"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

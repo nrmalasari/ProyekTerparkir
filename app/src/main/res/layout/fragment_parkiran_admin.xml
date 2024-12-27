@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentParkiranAdmin"
+    android:background="@color/background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <View
+        android:id="@+id/viewPeta"
+        android:layout_width="407dp"
+        android:layout_height="780dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTextPeta"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/viewTextPeta"
+        android:layout_width="140dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/font1"
+        android:text="Peta Parkiran"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/arrow_backPeta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toEndOf="@+id/arrow_backPeta"
+        app:layout_constraintTop_toTopOf="@+id/arrow_backPeta"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp"
+        android:background="@color/primaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewPeta"
+        app:tabIndicatorColor="@color/blue"
+        app:tabSelectedTextColor="@color/black">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parkiran 1" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parkiran 2" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parkiran 3" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="695dp"
+        android:layout_marginTop="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/viewPeta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/viewPeta"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</FrameLayout>

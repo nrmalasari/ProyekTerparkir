@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetaParkiran3Fragment"
+    android:background="@color/primaryColor">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <View
+        android:id="@+id/line_batasParkir3"
+        android:layout_width="390dp"
+        android:layout_height="600dp"
+        android:background="@drawable/line_vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <View
+        android:id="@+id/pembatasParkiran3"
+        android:layout_width="70dp"
+        android:layout_height="700dp"
+        android:background="@drawable/bg_garis"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="166dp"/>
+
+    <View
+        android:id="@+id/pembatas6"
+        android:layout_width="154dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/line_dashed"/>
+
+    <View
+        android:id="@+id/pembatas7"
+        android:layout_width="154dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="240dp"
+        android:background="@drawable/line_dashed"/>
+
+    <View
+        android:id="@+id/parkiran3_lanatai1_ke1"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_kosong_terisis"/>
+
+    <View
+        android:id="@+id/parkiran3_lanatai1_ke2"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="243dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_kosong_terisis"/>
+
+    <View
+        android:id="@+id/parkiran3_lanatai2_ke1"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="390dp"
+        android:background="@drawable/bg_kosong_terisis"/>
+
+    <View
+        android:id="@+id/parkiran3_lanatai2_ke2"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="243dp"
+        android:layout_marginTop="390dp"
+        android:background="@drawable/bg_kosong_terisis"/>
+
+    <TextView
+        android:id="@+id/textViewAdaTidakAdaMobilParkiran3Lantai1Ke1"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textViewAdaTidakAdaMobilParkiran3Lantai1Ke2"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="250dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textViewAdaTidakAdaMobilParkiran3Lantai2Ke1"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textViewAdaTidakAdaMobilParkiran3Lantai2Ke2"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="250dp"
+        android:textAlignment="center"/>
+
+</FrameLayout>

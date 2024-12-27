@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".BarcodeSide">
+
+    <ImageView
+        android:id="@+id/arrow_back_barcode"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewBarcode"
+        android:layout_width="370dp"
+        android:layout_height="490dp"
+        android:background="@drawable/bg_booking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/oval"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="312dp"
+        android:background="@drawable/bg_lingkaran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewBarcode" />
+
+    <View
+        android:id="@+id/oval2"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="312dp"
+        android:background="@drawable/bg_lingkaran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewBarcode" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="289dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="332dp"
+        android:background="@drawable/line_dashed"
+        app:layout_constraintEnd_toStartOf="@+id/oval2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/oval"
+        app:layout_constraintTop_toTopOf="@+id/viewBarcode"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewIDBarcode"
+        android:layout_width="133dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/font1"
+        android:text="BARCODE ANDA"
+        android:textColor="@color/abu"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBarcode"
+        app:layout_constraintEnd_toEndOf="@+id/viewBarcode"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/viewBarcode"
+        app:layout_constraintTop_toTopOf="@+id/viewBarcode"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/textViewMallPanakukang"
+        android:layout_width="140dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/font1"
+        android:text="Mall Panakukang"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBarcode"
+        app:layout_constraintEnd_toStartOf="@+id/oval2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/oval"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <TextView
+        android:id="@+id/textViewStreet"
+        android:layout_width="264dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/font1"
+        android:text="Jl. Boulevard No.3,
+         Masale, Panakkukang, Makassar"
+        android:textAlignment="center"
+        android:textColor="@color/abu"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBarcode"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMallPanakukang"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/textViewMallPanakukang"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMallPanakukang"
+        app:layout_constraintVertical_bias="0.203"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/pictBarcode"
+        android:layout_width="222dp"
+        android:layout_height="227dp"
+        app:layout_constraintBottom_toTopOf="@+id/viewLine"
+        app:layout_constraintEnd_toEndOf="@+id/viewBarcode"
+        app:layout_constraintStart_toStartOf="@+id/viewBarcode"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIDBarcode" />
+
+    <View
+        android:id="@+id/oval_black"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_lingkaran_hitam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <View
+        android:id="@+id/oval_black2"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_lingkaran_hitam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <ImageView
+        android:id="@+id/iconPhone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_local_phone_24"
+        app:layout_constraintBottom_toBottomOf="@+id/oval_black"
+        app:layout_constraintEnd_toEndOf="@+id/oval_black"
+        app:layout_constraintStart_toStartOf="@+id/oval_black"
+        app:layout_constraintTop_toTopOf="@+id/oval_black"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <ImageView
+        android:id="@+id/iconSend"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/send"
+        app:layout_constraintBottom_toBottomOf="@+id/oval_black2"
+        app:layout_constraintEnd_toEndOf="@+id/oval_black2"
+        app:layout_constraintStart_toStartOf="@+id/oval_black2"
+        app:layout_constraintTop_toTopOf="@+id/oval_black2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

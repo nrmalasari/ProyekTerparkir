@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "823382858078",
+    "firebase_url": "https://proyekterparkir-4cf71-default-rtdb.firebaseio.com",
+    "project_id": "proyekterparkir-4cf71",
+    "storage_bucket": "proyekterparkir-4cf71.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823382858078:android:32401212d0690a13ac17cf",
+        "android_client_info": {
+          "package_name": "com.example.proyekterparkir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3MdwRKupCRnQn4qFJPmu3UWVcCmp18rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

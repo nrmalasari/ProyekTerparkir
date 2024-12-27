@@ -30,21 +30,21 @@
     <!-- View sebagai background shadow -->
     <View
         android:id="@+id/view_drop_down"
-        android:layout_width="373dp"
-        android:layout_height="178dp"
-        android:background="@drawable/bg_shadow"
+        android:layout_width="352dp"
+        android:layout_height="174dp"
+        android:layout_marginLeft="18dp"
         android:layout_marginTop="190dp"
-        android:layout_marginLeft="18dp"/>
+        android:background="@drawable/bg_shadow" />
 
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="300dp"
+        android:layout_width="291dp"
         android:layout_height="48dp"
         android:layout_gravity="start"
         android:layout_marginLeft="55dp"
         android:layout_marginTop="220dp"
-        android:background="@drawable/drop_downd"/>
+        android:background="@drawable/drop_downd" />
 
     <ImageView
         android:id="@+id/actionDown"
@@ -56,17 +56,17 @@
 
     <Button
         android:id="@+id/button_search"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54dp"
         android:layout_marginTop="280dp"
         android:width="300dp"
         android:backgroundTint="@color/background"
-        android:layout_marginLeft="54dp"
         android:elevation="20dp"
         android:fontFamily="@font/font2m"
         android:text="Cari Parkiran"
         android:textColor="@color/black"
-        android:textSize="18dp"/>
+        android:textSize="18dp" />
 
     <TextView
         android:layout_width="258dp"
@@ -80,18 +80,18 @@
 
     <View
         android:id="@+id/viewRecomend1"
-        android:layout_width="360dp"
-        android:layout_height="185dp"
+        android:layout_width="336dp"
+        android:layout_height="167dp"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="470dp"
         android:background="@drawable/bg_shadow" />
 
     <LinearLayout
         android:id="@+id/viewPager2"
-        android:layout_width="360dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="500dp"
+        android:layout_width="338dp"
+        android:layout_height="143dp"
         android:layout_marginLeft="22dp"
+        android:layout_marginTop="500dp"
         android:orientation="vertical"
         android:padding="10dp">
 

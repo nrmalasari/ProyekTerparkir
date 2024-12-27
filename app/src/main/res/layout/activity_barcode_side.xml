@@ -21,8 +21,8 @@
 
     <View
         android:id="@+id/viewBarcode"
-        android:layout_width="370dp"
-        android:layout_height="490dp"
+        android:layout_width="347dp"
+        android:layout_height="485dp"
         android:background="@drawable/bg_booking"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

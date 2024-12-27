@@ -10,8 +10,8 @@
 
     <View
         android:id="@+id/viewPeta"
-        android:layout_width="407dp"
-        android:layout_height="780dp"
+        android:layout_width="390dp"
+        android:layout_height="682dp"
         android:background="@drawable/bg_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +49,7 @@
         android:id="@+id/tableLayout"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
         android:background="@color/primaryColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,16 +75,15 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:layout_width="wrap_content"
-        android:layout_height="695dp"
+        android:layout_width="394dp"
+        android:layout_height="596dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/viewPeta"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="@+id/viewPeta"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.9"
         tools:ignore="SpeakableTextPresentCheck" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

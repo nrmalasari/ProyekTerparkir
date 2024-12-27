@@ -10,11 +10,11 @@
 
     <View
         android:id="@+id/line_batasParkir3"
-        android:layout_width="390dp"
-        android:layout_height="600dp"
-        android:background="@drawable/line_vertical"
+        android:layout_width="367dp"
+        android:layout_height="577dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="10dp"/>
+        android:background="@drawable/line_vertical" />
 
 
     <View
@@ -43,35 +43,35 @@
 
     <View
         android:id="@+id/parkiran3_lanatai1_ke1"
-        android:layout_width="150dp"
-        android:layout_height="200dp"
+        android:layout_width="145dp"
+        android:layout_height="187dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="100dp"
-        android:background="@drawable/bg_kosong_terisis"/>
+        android:background="@drawable/bg_kosong_terisis" />
 
     <View
         android:id="@+id/parkiran3_lanatai1_ke2"
-        android:layout_width="150dp"
-        android:layout_height="200dp"
+        android:layout_width="120dp"
+        android:layout_height="190dp"
         android:layout_marginLeft="243dp"
         android:layout_marginTop="100dp"
-        android:background="@drawable/bg_kosong_terisis"/>
+        android:background="@drawable/bg_kosong_terisis" />
 
     <View
         android:id="@+id/parkiran3_lanatai2_ke1"
-        android:layout_width="150dp"
-        android:layout_height="200dp"
+        android:layout_width="138dp"
+        android:layout_height="186dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="390dp"
-        android:background="@drawable/bg_kosong_terisis"/>
+        android:background="@drawable/bg_kosong_terisis" />
 
     <View
         android:id="@+id/parkiran3_lanatai2_ke2"
-        android:layout_width="150dp"
-        android:layout_height="200dp"
+        android:layout_width="121dp"
+        android:layout_height="175dp"
         android:layout_marginLeft="243dp"
         android:layout_marginTop="390dp"
-        android:background="@drawable/bg_kosong_terisis"/>
+        android:background="@drawable/bg_kosong_terisis" />
 
     <TextView
         android:id="@+id/textViewAdaTidakAdaMobilParkiran3Lantai1Ke1"

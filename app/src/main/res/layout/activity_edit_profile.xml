@@ -35,73 +35,73 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="72dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         tools:layout_editor_absoluteX="0dp">
 
         <EditText
             android:id="@+id/nama_edit"
-            android:layout_width="366dp"
-            android:layout_height="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/btn_shape"
             android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="20dp"
+            android:drawableTint="@color/black"
             android:ems="20"
             android:hint="Ubah Nama Lengkap"
             android:inputType="text"
             android:paddingLeft="20dp"
-            android:drawablePadding="20dp"
-            android:paddingEnd="20dp"
-            android:drawableStart="@drawable/person"
-            android:drawableTint="@color/black"/>
+            android:paddingEnd="20dp" />
 
         <EditText
             android:id="@+id/email_edit"
-            android:layout_width="366dp"
-            android:layout_height="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/btn_shape"
             android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="20dp"
             android:ems="20"
             android:hint="Ubah Email"
             android:inputType="textEmailAddress"
             android:paddingLeft="20dp"
-            android:drawablePadding="20dp"
-            android:paddingEnd="20dp"
-            android:drawableStart="@drawable/email"/>
+            android:paddingEnd="20dp" />
 
         <EditText
             android:id="@+id/pass_edit"
-            android:layout_width="366dp"
+            android:layout_width="wrap_content"
             android:layout_height="64dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/btn_shape"
             android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="20dp"
             android:ems="20"
             android:hint="Ubah Password"
             android:inputType="textPassword"
             android:paddingLeft="20dp"
-            android:drawablePadding="20dp"
-            android:paddingEnd="20dp"
-            android:drawableStart="@drawable/password"/>
+            android:paddingEnd="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="64dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
-            android:orientation="horizontal"
             android:background="@drawable/btn_shape"
             android:backgroundTint="@color/white"
             android:gravity="center_vertical"
+            android:orientation="horizontal"
             android:paddingLeft="15dp"
             android:paddingRight="35dp">
 
@@ -110,7 +110,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:ccp_showNameCode="false"
-                app:ccp_showPhoneCode="true"/>
+                app:ccp_showPhoneCode="true" />
 
             <EditText
                 android:id="@+id/phone_edit"
@@ -127,18 +127,18 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_save"
+            style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            style="@android:style/Widget.Button"
             android:layout_marginStart="32dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/btn_masuk"
             android:fontFamily="@font/font1"
             android:text="Simpan"
-            android:textSize="17dp"
+            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textAlignment="center" />
+            android:textSize="17dp" />
 
     </LinearLayout>
 

@@ -20,13 +20,10 @@ public class BarcodeSide extends AppCompatActivity {
 
         // Ikon panah ke belakang akan kembali ke Home
         ImageView arrowBack = findViewById(R.id.arrow_back_barcode);
-        arrowBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Kembali ke MainActivity (Home)
-                Intent intent = new Intent(BarcodeSide.this, Home.class);
-                startActivity(intent);
-            }
+        arrowBack.setOnClickListener(view -> {
+            // Kembali ke MainActivity (Home)
+            Intent intent = new Intent(BarcodeSide.this, Home.class);
+            startActivity(intent);
         });
 
         // Ambil QR code dari SharedPreferences

@@ -15,7 +15,7 @@
         android:layout_width="371dp"
         android:layout_height="581dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/line_vertical" />
 
 
@@ -24,31 +24,31 @@
         android:layout_width="70dp"
         android:layout_height="700dp"
         android:background="@drawable/bg_garis"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="166dp"/>
 
     <View
         android:id="@+id/pembatas2"
         android:layout_width="154dp"
         android:layout_height="10dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="310dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/line_dashed"/>
 
     <View
         android:id="@+id/pembatas3"
-        android:layout_width="154dp"
+        android:layout_width="137dp"
         android:layout_height="10dp"
-        android:layout_marginTop="350dp"
         android:layout_marginLeft="240dp"
-        android:background="@drawable/line_dashed"/>
+        android:layout_marginTop="310dp"
+        android:background="@drawable/line_dashed" />
 
     <View
         android:id="@+id/parkiran1_lanatai1_ke1"
-        android:layout_width="129dp"
-        android:layout_height="189dp"
+        android:layout_width="142dp"
+        android:layout_height="191dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="55dp"
         android:background="@drawable/bg_kosong_terisis" />
 
     <View
@@ -56,15 +56,15 @@
         android:layout_width="132dp"
         android:layout_height="195dp"
         android:layout_marginLeft="243dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="55dp"
         android:background="@drawable/bg_kosong_terisis" />
 
     <View
         android:id="@+id/parkiran1_lanatai2_ke1"
-        android:layout_width="138dp"
+        android:layout_width="143dp"
         android:layout_height="203dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="390dp"
+        android:layout_marginTop="350dp"
         android:background="@drawable/bg_kosong_terisis" />
 
     <View
@@ -72,15 +72,15 @@
         android:layout_width="135dp"
         android:layout_height="197dp"
         android:layout_marginLeft="243dp"
-        android:layout_marginTop="390dp"
+        android:layout_marginTop="350dp"
         android:background="@drawable/bg_kosong_terisis" />
 
     <TextView
         android:id="@+id/textViewAdaTidakAdaMobilParkiran1Lantai1Ke1"
-        android:layout_width="130dp"
+        android:layout_width="134dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="140dp"
         android:textAlignment="center" />
 
     <TextView
@@ -88,7 +88,7 @@
         android:layout_width="132dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="250dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="140dp"
         android:textAlignment="center" />
 
     <TextView
@@ -96,14 +96,14 @@
         android:layout_width="138dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="490dp"
+        android:layout_marginTop="450dp"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textViewAdaTidakAdaMobilParkiran1Lantai2Ke2"
-        android:layout_width="132dp"
+        android:layout_width="126dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="250dp"
-        android:layout_marginTop="490dp"
+        android:layout_marginTop="450dp"
         android:textAlignment="center" />
 </FrameLayout>

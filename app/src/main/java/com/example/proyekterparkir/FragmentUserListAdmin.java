@@ -60,9 +60,9 @@ public class FragmentUserListAdmin extends Fragment {
                     HelperClass user = new HelperClass(
                             item.child("nama").getValue(String.class),
                             item.child("email").getValue(String.class),
-                            item.child("pass").getValue(String.class),
+                            item.child("no_hp").getValue(String.class),
                             "",  // Kosongkan konf_pass, jika Anda tidak membutuhkan data ini
-                            item.child("no_hp").getValue(String.class)
+                            item.child("pass").getValue(String.class)
                     );
 
                     // Pastikan data valid sebelum ditambahkan ke list

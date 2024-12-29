@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font1"
                 android:gravity="center"
-                android:text="27 DESEMBER 2024"
+                android:text="30 DESEMBER 2024"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 

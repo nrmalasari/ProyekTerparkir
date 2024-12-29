@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -79,42 +78,36 @@ public class EditProfile extends AppCompatActivity {
         });
 
         // Simpan perubahan
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String updatedNama = namaEdit.getText().toString();
-                String updatedEmail = emailEdit.getText().toString();
-                String updatedPass = passEdit.getText().toString();
-                String updatedPhone = phoneEdit.getText().toString();
+        btnSave.setOnClickListener(view -> {
+            String updatedNama = namaEdit.getText().toString();
+            String updatedEmail = emailEdit.getText().toString();
+            String updatedPass = passEdit.getText().toString();
+            String updatedPhone = phoneEdit.getText().toString();
 
-                if (TextUtils.isEmpty(updatedNama) || TextUtils.isEmpty(updatedEmail) ||
-                        TextUtils.isEmpty(updatedPass) || TextUtils.isEmpty(updatedPhone)) {
-                    Toast.makeText(EditProfile.this, "Semua kolom harus diisi", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                // Perbarui data di Firebase
-                reference.child("nama").setValue(updatedNama);
-                reference.child("email").setValue(updatedEmail);
-                reference.child("pass").setValue(updatedPass);
-                reference.child("no_hp").setValue(updatedPhone);
-
-                // Perbarui email di SharedPreferences jika email berubah
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString("email_user", updatedEmail);
-                editor.apply();
-
-                Toast.makeText(EditProfile.this, "Profil berhasil diperbarui", Toast.LENGTH_SHORT).show();
+            if (TextUtils.isEmpty(updatedNama) || TextUtils.isEmpty(updatedEmail) ||
+                    TextUtils.isEmpty(updatedPass) || TextUtils.isEmpty(updatedPhone)) {
+                Toast.makeText(EditProfile.this, "Semua kolom harus diisi", Toast.LENGTH_SHORT).show();
+                return;
             }
+
+            // Perbarui data di Firebase
+            reference.child("nama").setValue(updatedNama);
+            reference.child("email").setValue(updatedEmail);
+            reference.child("pass").setValue(updatedPass);
+            reference.child("no_hp").setValue(updatedPhone);
+
+            // Perbarui email di SharedPreferences jika email berubah
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString("email_user", updatedEmail);
+            editor.apply();
+
+            Toast.makeText(EditProfile.this, "Profil berhasil diperbarui", Toast.LENGTH_SHORT).show();
         });
 
         ImageView arrowBack = findViewById(R.id.arrow_backProfile);
-        arrowBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(EditProfile.this, SettingsFragment.class);
-                startActivity(intent);
-            }
+        arrowBack.setOnClickListener(view -> {
+            Intent intent = new Intent(EditProfile.this, SettingsFragment.class);
+            startActivity(intent);
         });
 
     }

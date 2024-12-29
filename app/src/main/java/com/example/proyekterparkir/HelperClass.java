@@ -6,9 +6,9 @@ public class HelperClass {
     public HelperClass(String nama, String email, String pass, String konf_pass, String no_hp) {
         this.nama = nama;
         this.email = email;
-        this.pass = pass;
-        this.konf_pass = konf_pass;
         this.no_hp = no_hp;
+        this.konf_pass = konf_pass;
+        this.pass = pass;
     }
 
     public String getNama() {

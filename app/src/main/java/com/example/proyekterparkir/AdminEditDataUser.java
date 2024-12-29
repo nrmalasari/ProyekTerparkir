@@ -1,9 +1,9 @@
 package com.example.proyekterparkir;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -19,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class AdminEditDataUser extends AppCompatActivity {
 
-    private EditText editNama, editEmail, editNoHp, editPass;
+    private EditText editNama, editEmail, editPass, editNoHp;
     private Button btnSave;
     private String emailKey;  // Menyimpan email untuk referensi data yang akan diedit
     private DatabaseReference database;
@@ -32,8 +32,8 @@ public class AdminEditDataUser extends AppCompatActivity {
         // Inisialisasi EditText dan Button
         editNama = findViewById(R.id.editNama);
         editEmail = findViewById(R.id.editEmail);
-        editNoHp = findViewById(R.id.editNoHp);
         editPass = findViewById(R.id.editPassword);
+        editNoHp = findViewById(R.id.editNoHp);
         btnSave = findViewById(R.id.btnSave);
 
         // Ambil data email yang diteruskan melalui intent
@@ -61,6 +61,7 @@ public class AdminEditDataUser extends AppCompatActivity {
                     editEmail.setText(email);
                     editPass.setText(password);
                     editNoHp.setText(phone);
+
                 } else {
                     Toast.makeText(AdminEditDataUser.this, "Data pengguna tidak ditemukan", Toast.LENGTH_SHORT).show();
                 }
@@ -72,23 +73,31 @@ public class AdminEditDataUser extends AppCompatActivity {
             }
         });
 
+        ImageView arrowBack = findViewById(R.id.arrow_backAdmin);
+        arrowBack.setOnClickListener(view -> {
+            Intent intent = new Intent(AdminEditDataUser.this, FragmentUserListAdmin.class);
+            startActivity(intent);
+        });
+
+
         // Simpan perubahan data pengguna
         btnSave.setOnClickListener(v -> {
             String updatedNama = editNama.getText().toString().trim();
             String updatedEmail = editEmail.getText().toString().trim();
-            String updatedNoHp = editNoHp.getText().toString().trim();
             String updatedPass = editPass.getText().toString().trim();
+            String updatedNoHp = editNoHp.getText().toString().trim();
+
 
             // Validasi input
             if (TextUtils.isEmpty(updatedNama) || TextUtils.isEmpty(updatedEmail) ||
-                    TextUtils.isEmpty(updatedNoHp) || TextUtils.isEmpty(updatedPass)) {
+                    TextUtils.isEmpty(updatedPass) || TextUtils.isEmpty(updatedNoHp)) {
                 Toast.makeText(AdminEditDataUser.this, "Semua kolom harus diisi", Toast.LENGTH_SHORT).show();
                 return;
             }
 
             // Update data di Firebase
             // Asumsi konf_pass tidak diubah dan memberikan nilai kosong
-            HelperClass updatedUser = new HelperClass(updatedNama, updatedEmail, updatedNoHp, "", updatedPass);
+            HelperClass updatedUser = new HelperClass(updatedNama, updatedEmail, updatedPass, "", updatedNoHp);
             database.setValue(updatedUser);
 
             // Menyimpan perubahan email di SharedPreferences (jika diperlukan)
@@ -103,5 +112,6 @@ public class AdminEditDataUser extends AppCompatActivity {
             // Kembali ke aktivitas sebelumnya
             finish();
         });
+
     }
 }

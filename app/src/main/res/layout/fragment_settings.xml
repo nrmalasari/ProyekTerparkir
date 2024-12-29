@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="167dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="130dp"
         android:fontFamily="@font/font1"
         android:text="Profile"
         android:textColor="@color/black"
@@ -30,7 +30,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="657dp"
+        android:layout_marginTop="100dp"
         android:orientation="vertical">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -39,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="120dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/view_profile"
@@ -53,6 +54,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_riwayat_parkir"
+            style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="32dp"
@@ -65,12 +67,12 @@
             android:fontFamily="@font/font1"
             android:paddingStart="20dp"
             android:text="Riwayat Parkir"
-            android:textSize="17dp"
-            style="@android:style/Widget.Button"
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            android:textSize="17dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_notifikasi"
+            style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="32dp"
@@ -83,12 +85,12 @@
             android:fontFamily="@font/font1"
             android:paddingStart="20dp"
             android:text="Notifikasi"
-            android:textSize="17dp"
-            style="@android:style/Widget.Button"
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            android:textSize="17dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_help_center"
+            style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="32dp"
@@ -101,24 +103,23 @@
             android:fontFamily="@font/font1"
             android:paddingStart="20dp"
             android:text="Help Center"
-            android:textSize="17dp"
-            style="@android:style/Widget.Button"
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            android:textSize="17dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_logout"
+            style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            style="@android:style/Widget.Button"
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/btn_masuk"
             android:fontFamily="@font/font1"
             android:text="Log Out"
-            android:textSize="17dp"
+            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textAlignment="center" />
+            android:textSize="17dp" />
 
 
     </LinearLayout>
